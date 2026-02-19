@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> IT PERFUME | Premium Perfume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        /* Hero Header (Like the Five M Header) */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1687603917313-ccae1a289a9d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Product Section (Grid Layout) */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Product Card (Inspired by the Five M Image Blocks) */
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .price {
+            color: #d4af37; /* Gold color */
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        /* Action Buttons (Like the Blue/Red buttons on Five M) */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+            flex: 1;
+        }
+
+        .btn-buy {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .btn-details {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #1a1a1a;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">IT PERUME  </a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Collections</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>IT Perfume</h1>
+        <p>PERFUME collection</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="product-card">
+            <img src="https://www.sogo.com.my/cdn/shop/files/YEDP100ML-3614272050358_1.jpg?v=1725528054&width=1800" alt="Perfume 1">
+            <div class="product-info">
+                <h3>YSL YEDP</h3>
+                <p class="price">$10.00 PER 10ML</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-buy">BUY NOW</a>
+                 
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://royalsperfume.com/cdn/shop/files/proud-of-you-intense-by-fragrance-world_1800x1800.png?v=1764227964" alt="Perfume 2">
+            <div class="product-info">
+                <h3>PROUD OF YOU</h3>
+                <p class="price">$7.00 PER 10ML</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-buy">BUY NOW</a>
+                  
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://fimgs.net/mdimg/perfume-thumbs/dark-375x500.65414.2x.avif" alt="Perfume 3">
+            <div class="product-info">
+                <h3>9PM AFNAN</h3>
+                <p class="price">$6.00 PER 10ML</p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-buy">BUY NOW</a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 IT PERFUME .</p>
+        <p>Follow us 
+             <FACEBOOK><TELEGRAM></for updates!</p>
+    </footer>
+
+</body>
+</html>
